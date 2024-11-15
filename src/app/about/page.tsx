@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-type Props = {}
+type Props = Record<string, never>; // Explicitly no props
 
-const About = (props: Props) => {
+const About: React.FC<Props> = () => {
     return (
         <div>About</div>
-    )
-}
+    );
+};
 
-export default About
+export default About;

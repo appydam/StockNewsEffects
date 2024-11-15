@@ -1,14 +1,12 @@
-import React from 'react'
+import React from 'react';
 import Contact from "@/components/Contact";
 
-type Props = {}
-
-const page = (props: Props) => {
+const Page: React.FC = () => {
     return (
         <div>
             <Contact />
         </div>
-    )
-}
+    );
+};
 
-export default page
+export default Page;

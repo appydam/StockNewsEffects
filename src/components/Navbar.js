@@ -1,7 +1,7 @@
 // src/components/Navbar.js
 "use client";
 
-import { Bell, User, Bookmark } from "lucide-react";
+import { Bell, Bookmark } from "lucide-react";
 import Link from 'next/link';
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 

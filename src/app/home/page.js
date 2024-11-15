@@ -1,11 +1,10 @@
 
-import { RedirectToSignIn, SignedIn, SignedOut } from '@clerk/nextjs';
+import { SignedIn, SignedOut } from '@clerk/nextjs';
 import { currentUser } from '@clerk/nextjs/server'
 import React from 'react'
 
-type Props = {}
 
-const page = async (props: Props) => {
+const page = async () => {
 
     const user = await currentUser();
 
