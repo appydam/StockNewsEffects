@@ -1,0 +1,22 @@
+/* Tailwind - you may add this to the Tailwind config or CSS file */
+.affected-stocks {
+    padding: 1rem;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
+}
+
+.animate-modal {
+    animation: fadeInScale 0.3s ease-in-out;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

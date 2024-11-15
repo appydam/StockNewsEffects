@@ -9,7 +9,6 @@ const page = async (props: Props) => {
 
     const user = await currentUser();
 
-
     return (
         <div>
             {user?.firstName}
