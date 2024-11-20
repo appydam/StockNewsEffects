@@ -9,9 +9,9 @@ export default function StockModal({ stock, onClose }) {
 
                 {/* Reason of Impact */}
                 <div>
-                    <h3 className="font-semibold text-lg md:text-xl text-gray-900 mb-3">Reason of Impact</h3>
-                    <p className="text-gray-700 text-sm md:text-base">{stock.reason}</p>
-                    <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1 text-sm md:text-base">
+                    <h3 className="font-semibold text-sm md:text-lg text-gray-900 mb-3">Reason of Impact</h3>
+                    <p className="text-gray-700 text-sm md:text-md">{stock.reason}</p>
+                    <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1 text-xs md:text-md">
                         {stock.reasonPoints.map((reasonPoint, idx) => (
                             <li key={idx}>{reasonPoint}</li>
                         ))}
@@ -19,9 +19,10 @@ export default function StockModal({ stock, onClose }) {
                 </div>
 
                 {/* Fundamental Insights */}
+
                 <div>
-                    <h3 className="font-semibold text-lg text-gray-900 mb-2">Fundamental Insights</h3>
-                    <ul className="list-disc list-inside text-gray-700 space-y-1 text-sm md:text-base">
+                    <h3 className="font-semibold text-lg text-gray-900 mb-0">Fundamental Insights</h3>
+                    <ul className="list-disc list-inside text-gray-700 space-y-0 text-sm md:text-md">
                         <li>Current Market Price: {stock.stockFundamentalInsights.cmp}</li>
                         {/* <li>Order Book: {stock.stockFundamentalInsights.orderBook}</li> */}
                         <li>Book Value: {stock.stockFundamentalInsights.bookValue}</li>
@@ -78,12 +79,15 @@ export default function StockModal({ stock, onClose }) {
 
                 {/* Judgement Section */}
                 <div>
-                    <p
-                        className={`font-semibold text-sm md:text-base ${stock.judgementOverview === "positive" ? "text-green-500" : "text-red-500"
-                            }`}
-                    >
-                        {stock.judgementOverview}
-                    </p>
+                    <div className="flex">
+                        <span>Sentiment: </span>
+                        <p
+                            className={`font-semibold pl-1 text-sm md:text-base ${stock.judgementOverview === "positive" ? "text-green-500" : "text-red-500"
+                                }`}
+                        >
+                            {stock.judgementOverview}
+                        </p>
+                    </div>
                     <p className="text-gray-700 text-sm md:text-base">{stock.judgement}</p>
                 </div>
 

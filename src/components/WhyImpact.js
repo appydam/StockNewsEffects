@@ -21,12 +21,12 @@ export default function WhyImpact({ stock, onClose }) {
                     {stock.reason}
                 </p>
 
-                <h4 className="text-lg font-medium text-gray-700 mb-2">
+                <h4 className="text-md font-medium text-gray-700 mb-2">
                     Key Factors:
                 </h4>
-                <ul className="list-disc list-inside text-gray-600 space-y-2 pl-4">
+                <ul className="list-disc list-inside text-gray-600 space-y-1 pl-4">
                     {stock.reasonOfImpact.map((reasonPoint, idx) => (
-                        <li key={idx} className="text-sm md:text-base">
+                        <li key={idx} className="text-sm md:text-sm">
                             {reasonPoint}
                         </li>
                     ))}

@@ -493,5 +493,5 @@ export const newsArticles = [
             "Banking and financial services companies may see a spike in transactions due to increased consumer purchases and luxury spending.",
             "Luxury brands and high-end bridal fashion markets will likely see an influx of shoppers looking for premium products during wedding season."
         ]
-    }
+    },
 ];
